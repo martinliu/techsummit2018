@@ -11,7 +11,8 @@ pipeline {
                 echo 'Testing...'
                 sh '''pwd
                 ls
-                docker build -t martinliu/uptick-node:t1 .'''
+                docker build -t martinliu/uptick-node:t1 .
+                docker build -t martinliu/uptick-web:t1'''
             }
         }
         stage('Build'){
